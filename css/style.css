@@ -723,6 +723,10 @@ body.touch .sub-menu__list.active {
   margin-left: 24px;
 }
 
+.work__video iframe {
+  border: none;
+}
+
 .work__content-title {
   text-align: start;
   margin-bottom: 36px;

@@ -184,5 +184,4 @@ $(document).ready(function () {
   targets.forEach((target) => {
     observer.observe(target);
   });
-
 });

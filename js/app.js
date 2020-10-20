@@ -147,16 +147,6 @@ $(document).ready(function () {
     );
   });
 
-  // Lazy load
-  //============= dynamic placeholder for images
-
-  const placeholder =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
-  const targets = document.querySelectorAll("[data-src]");
-  targets.forEach((target) => {
-    target.src = placeholder;
-  });
-
   //============= IntersectionObserver
 
   const options = {
@@ -181,6 +171,7 @@ $(document).ready(function () {
   };
 
   const observer = new IntersectionObserver(loadImage, options);
+  const targets = document.querySelectorAll("[data-src]");
   targets.forEach((target) => {
     observer.observe(target);
   });
